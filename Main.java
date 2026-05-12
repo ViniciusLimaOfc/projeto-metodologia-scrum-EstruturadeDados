@@ -60,7 +60,7 @@ public class Main {
 
                         Produto[] listaBubble = service.obterArray();
 
-                        BubbleSortService.bubbleSort(listaBubble);
+                        BubbleSort.bubbleSort(listaBubble);
 
                         System.out.println("Produtos ordenados por ID usando Bubble Sort.");
 
