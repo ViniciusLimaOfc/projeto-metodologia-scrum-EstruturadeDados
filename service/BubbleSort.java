@@ -2,7 +2,7 @@ package service;
 
 import model.Produto;
 
-public class BubbleSortService {
+public class BubbleSort {
 
     public static void bubbleSort(Produto[] lista) {
         int n = lista.length;
