@@ -106,28 +106,25 @@ public class Main {
 
                     case 6:
 
-                        Produto[] listaBinaria = service.obterArray();
+                      case 6:
+                  Produto[] listaBinaria = service.obterArray();
 
-                        BubbleSortService.bubbleSort(listaBinaria);
+                        // Corrigido: Nome da classe deve ser BubbleSort
+                       BubbleSort.bubbleSort(listaBinaria); 
 
-                        System.out.print("Digite o ID para busca binária: ");
-                        int idBin = Integer.parseInt(scanner.nextLine());
+                      System.out.print("Digite o ID para busca binária: ");
+                      int idBin = Integer.parseInt(scanner.nextLine());
 
-                        Produto resultadoBin =
-                                BuscaBinaria.buscaBinaria(
-                                        listaBinaria,
-                                        idBin
-                                );
+                     Produto resultadoBin = BuscaBinaria.buscaBinaria(listaBinaria, idBin);
 
-                        if (resultadoBin != null) {
-                            System.out.println("Produto encontrado:");
-                            System.out.println(resultadoBin);
-                        } else {
-                            System.out.println("Produto não encontrado.");
-                        }
-
-                        break;
-
+                     if (resultadoBin != null) {
+                     System.out.println("Produto encontrado (via Busca Binária):");
+                     System.out.println(resultadoBin);
+                     } else {
+                     System.out.println("Produto não encontrado.");
+                     }
+                     break;
+                        
                     case 7:
 
                         System.out.print("Digite o ID para busca hash: ");
